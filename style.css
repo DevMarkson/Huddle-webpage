@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+/* Global Styles
+================
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Colors
+=========
+*/
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Typography
+=============
+*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+.community h2 {
+    color: var(--very-dark-cyan);
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.company-info p {
+    color: var(--grayish-blue);
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: -0.1px;
+    line-height: 1.33em;
+}
+
+.container p {
+    font-size: 0.735em;
+    color: var(--grayish-blue);
+    opacity: 0.9;
+    line-height: 1.11em;
+}
+
+.users-text p {
+    letter-spacing: 0.4px;
+}
+
+.btn {
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+.footer-contact div p {
+    font-size: 0.875rem;
+    line-height: 1.28em;
+}
+
+.footer-contact,
+.copyright,
+a {
+    color: var(--very-pale-cyan);
+    opacity: 0.8;
+}
+
+.copyright,
+.attribution {
+    font-size: 0.6rem;
+}
+
+.attribution {
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--very-pale-cyan);
+}
+
+/* Layout
+=========
+*/
+
+/* Header */
+
+header {
+    background: var(--very-pale-cyan) url("images/bg-hero-mobile.svg") no-repeat;
+    padding: 1.5em 0.8em;
+}
+
+.navbar>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin-bottom: 4.4em;
+}
+
+.logo {
+    width: 100px;
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--very-dark-cyan);
+    padding: 0.4em 2em;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.025) 0px 5px 5px -8px,
+        rgba(0, 0, 0, 0.1) 0px 5px 5px -2px;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+.company-info {
+    text-align: center;
+}
+
+.company-info p {
+    margin-bottom: 2.4em;
+}
+
+.btn-primary {
+    background: var(--pink);
+    color: var(--very-pale-cyan);
+    letter-spacing: 0.5px;
+    padding: 1.2em 6em;
+    border-radius: 20px;
+    transition: opacity 1s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    opacity: 0.8;
+}
+
+.mockup {
+    margin: 3.6em 0 0.3em;
+}
+
+/* Cards */
+
+main {
+    position: relative;
+}
+
+.container {
+    background: var(--white);
+    margin: 3.5em auto 0;
+    width: 88%;
+    padding: 3em 2.25em;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.1) 5px 7px 20px 5px;
+    border-radius: 15px;
+}
+
+.container img {
+    margin-bottom: 2.5em;
+}
+
+h2 {
+    margin-bottom: 0.75em;
+}
+
+.users {
+    margin-bottom: 13em;
+}
+
+.community {
+    width: 93%;
+    padding: 2.5em 0;
+    position: absolute;
+    bottom: -18.5%;
+    left: 3.5%;
+}
+
+.community h2 {
+    margin-bottom: 1.7em;
+}
+
+.community .btn {
+    padding: 1.2em 4em;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px;
+    transition: opacity 1s;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: 0.5;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-pale-cyan);
+    padding: 6.25em 0em 3em 1em;
+    z-index: -1;
+}
+
+footer img {
+    width: 1.1em;
+    height: 1em;
+    margin-top: 1.6em;
+}
+
+.logo-footer {
+    width: 9em;
+    height: 1.4em;
+}
+
+.footer-contact {
+    margin-bottom: 3.3em;
+}
+
+.footer-contact div {
+    display: flex;
+}
+
+.footer-contact div p {
+    margin: 1.5em 1.7em 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 1em;
+}
+
+.footer-links {
+    margin-bottom: 2em;
+}
+
+.social-icons>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2.5em;
+    min-height: 2.5em;
+    font-size: 0.7em;
+    color: var(--very-pale-cyan);
+    border: 1px solid var(--very-pale-cyan);
+    border-radius: 50%;
+    margin: 0.5em;
+    transition: color 1s;
+    transition: border 1s;
+}
+
+.fab:hover,
+.fab:focus {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.attribution {
+    text-align: center;
+}
+
+/* Media Queries
+================
+*/
+
+@media (min-width: 600px) {
+    header {
+        background: var(--very-pale-cyan) url("images/bg-hero-desktop.svg") no-repeat;
+    }
+
+    header,
+    footer {
+        padding: 5em 3em;
+    }
+
+    .company-info p,
+    .container p {
+        font-size: 1rem;
+    }
+
+    .community {
+        width: 80%;
+        bottom: -15%;
+        left: 10%;
+    }
+
+    h1 {
+        font-size: 2.1em;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 7em;
+    }
+
+    .btn-secondary {
+        padding: 1em 3em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .community {
+        bottom: -13%;
+    }
+
+    .community .btn-primary {
+        font-size: 1rem;
+        padding: 1em 3em;
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* Typography */
+    h1,
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .company-info p {
+        line-height: 1.5em;
+        letter-spacing: -0.9px;
+    }
+
+    .community h2 {
+        font-size: 1.85rem;
+    }
+
+    .footer-contact div p {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+
+    /* Layout */
+    .hero,
+    .container {
+        display: flex;
+    }
+
+    .container,
+    .company-info {
+        text-align: left;
+    }
+
+    .container {
+        padding-right: 3em;
+        padding-bottom: 0;
+        padding-left: 3em;
+        margin: 2em auto;
+    }
+
+    main {
+        margin: 9em 1.5em;
+    }
+
+    section {
+        align-items: center;
+        justify-content: center;
+        min-height: 24em;
+    }
+
+    /* Header */
+    header {
+        padding: 2.7em 4em;
+    }
+
+    .logo {
+        width: 11em;
+    }
+
+    .btn-secondary {
+        font-size: 0.8em;
+        padding: 1em 4.5em;
+    }
+
+    .navbar {
+        margin-bottom: 3.9em;
+    }
+
+    .mockup {
+        width: 85%;
+        margin-top: 0;
+    }
+
+    .company-info {
+        width: 70%;
+        margin-right: 4.3em;
+    }
+
+    h1 {
+        margin-bottom: 0.6em;
+    }
+
+    .btn-primary {
+        font-size: 0.7rem;
+        border-radius: 50px;
+        padding: 1.5em 5.5em;
+    }
+
+    /* Cards */
+    .grow-together,
+    .users {
+        flex-direction: row-reverse;
+    }
+
+    .grow-together-text {
+        width: 80%;
+        padding-bottom: 2.75em;
+    }
+
+    .grow-together-text p {
+        width: 80%;
+        line-height: 27px;
+    }
+
+    .grow-together-image {
+        width: 50%;
+    }
+
+    .conversations-text {
+        margin-left: 5em;
+        padding-bottom: 2.75em;
+    }
+
+    .conversations-text p {
+        line-height: 27px;
+    }
+
+    .conversations-image {
+        width: 80%;
+    }
+
+    .users {
+        margin-bottom: 18em;
+    }
+
+    .users-text {
+        padding-bottom: 2.75em;
+    }
+
+    .users-text p {
+        line-height: 27px;
+        width: 80%;
+    }
+
+    section.community {
+        min-height: 10em;
+    }
+
+    .community {
+        display: block;
+        text-align: center;
+        width: 75%;
+        bottom: -32.5%;
+        left: 13%;
+        padding: 2em 1em 4em;
+    }
+
+    /* Footer */
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-footer {
+        margin-top: 4em;
+        margin-bottom: 0.5em;
+    }
+
+    .footer-contact {
+        width: 33%;
+    }
+
+    .footer-links-left-col,
+    .footer-links-right-col {
+        margin-top: 0.75em;
+        margin-right: 1.5em;
+        line-height: 2.5em;
+    }
+
+    .social-icons {
+        margin-top: 0.75em;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        padding-left: 7.1em;
+        padding-right: 2em;
+    }
+
+    .company-info {
+        width: 60%;
+    }
+
+    .mockup {
+        margin: unset;
+    }
+
+    .conversations-text {
+        margin-left: 9em;
+        padding-bottom: 2.75em;
+    }
+
+    .users-image {
+        width: 90%;
+    }
+
+    section.community {
+        min-height: 15em;
+    }
+
+    .community {
+        width: 58%;
+        bottom: -33.5%;
+        left: 21%;
+        padding: 3.7em 0 4.5em;
+    }
+
+    .community h2 {
+        margin-bottom: 2em;
+    }
+
+    .community .btn-primary {
+        font-size: 1.1rem;
+        padding: 1.4em 5.3em;
+    }
+
+    .container-footer {
+        margin-left: 4em;
+    }
+
+    .logo-footer {
+        margin-left: 4em;
+        width: 13.5em;
+        height: 2.25em;
+    }
+
+    .social-icons {
+        margin-top: 0.75em;
+        margin-right: 9.5em;
+        margin-left: 1.5em;
+    }
+
+    .copyright {
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .company-info p {
+        font-size: 1.5rem;
+        margin-bottom: 3em;
+    }
+
+    .company-info .btn-primary {
+        font-size: 1.2rem;
+        padding: 1em 3em;
+        border-radius: 50px;
+    }
+
+    .company-info {
+        padding-top: 0;
+    }
+
+    .community {
+        bottom: -25%;
+    }
+}
