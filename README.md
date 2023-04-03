@@ -1,4 +1,5 @@
 #Huddle
+
 This is a sample landing page for Huddle, a community-building platform. It includes information about Huddle's features and benefits, as well as links to try it for free.
 
 ##Getting Started
